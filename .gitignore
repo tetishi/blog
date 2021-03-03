@@ -1,4 +1,4 @@
 **/blogsync.yaml
 .env
 /.idea/
-node_modules
+node_modules/
