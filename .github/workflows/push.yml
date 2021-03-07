@@ -43,7 +43,7 @@ jobs:
         DOMAIN: ${{ secrets.DOMAIN }}
       run: |
         git diff origin/main --name-only \
-        | grep entries/${DOMAIN}/entry \
+        | grep /${DOMAIN}/entry \
         | xargs -t -n1 ~/go/bin/blogsync push
 
     # - name: notify to slack
