@@ -40,37 +40,55 @@ $ EDITOR=vim bin/rails credentials:edit
 
 環境毎のcredentials keyを生成・秘匿情報の編集
 # テスト環境
+```
 $ EDITOR="vim" bin/rails credentials:edit -e test
+```
 
 # 開発環境
+```
 $ EDITOR="vim" bin/rails credentials:edit -e development
+```
 
 # ステージング環境
+```
 $ EDITOR="vim" bin/rails credentials:edit -e staging
+```
 
 # 本番環境
+```
 $ EDITOR="vim" bin/rails credentials:edit -e production
+```
 開発環境なら、-e developmentという感じでオプションで環境を指定します。ちなみに、--environment=developmentという指定も同じです。
 
 環境毎のcredentialsを確認
 # テスト環境
+```
 $ bin/rails credentials:show -e test
+```
 
 # 開発環境
+```
 $ bin/rails credentials:show -e development
+```
 
 # ステージング環境
+```
 $ bin/rails credentials:show -e staging
+```
 
 # 本番環境
+```
 $ bin/rails credentials:show -e production
+```
 
 aws:
   access_key_id: 123
   secret_access_key: 345
 credentialsへのアクセス
 # 本番環境の場合
+```
 $ bin/rails c -e production
+```
 
 # 設定内容を確認
 pry(main)> Rails.application.credentials.config
