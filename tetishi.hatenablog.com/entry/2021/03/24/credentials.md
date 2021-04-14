@@ -91,13 +91,19 @@ $ bin/rails c -e production
 ```
 
 # 設定内容を確認
+```
 pry(main)> Rails.application.credentials.config
 => {:aws=>{:access_key_id=>123, :secret_access_key=>345}}
+```
 
 # 設定値にアクセス
+```
 pry(main)> Rails.application.credentials.aws[:access_key_id]
 => 123
+```
 
 # この書き方も同じ
+```
 pry(main)> Rails.application.credentials.dig(:aws, :access_key_id)
 => 123
+```
