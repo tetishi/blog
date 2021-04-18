@@ -15,6 +15,8 @@ $ bin/rails -v
 Rails 6.0.3.4
 ```
 
+# Multi Environment Credentials導入後のディレクトリとファイル構成
+```
 $ tree .
 .
 ...
@@ -33,6 +35,7 @@ $ tree .
 ... ...
 │   ├── master.key
 ... ...
+```
 
 Masterのcredentials keyを生成・秘匿情報の編集
 ```
