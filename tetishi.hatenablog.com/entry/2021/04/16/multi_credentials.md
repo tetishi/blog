@@ -71,7 +71,6 @@ $ EDITOR="vim" bin/rails credentials:edit -e production
 $ bin/rails credentials:show -e test
 ```
 
-
 # 開発環境
 ```
 $ bin/rails credentials:show -e development
