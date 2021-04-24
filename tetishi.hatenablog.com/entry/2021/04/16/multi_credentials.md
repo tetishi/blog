@@ -4,7 +4,7 @@ Date: 2021-03-24T11:29:14+09:00
 ---
 
 # はじめに
-私が開発している自作サービスにMulti Environment Credentialsを導入したので、その備忘録を残したいのでブログにしました。Multi Environment Credentialsは本番環境、開発環境、テスト環境、それぞれのCredentialsを設定することができます。
+私が開発している自作サービスにMulti Environment Credentialsを導入したので、その備忘録を残したいのでブログにしました。Multi Environment Credentialsは本番環境、開発環境、テスト環境、それぞれのCredentialsを設定できます。
 
 # 開発環境
 ```
