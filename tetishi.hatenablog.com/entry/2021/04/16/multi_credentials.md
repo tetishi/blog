@@ -37,51 +37,51 @@ $ tree .
 ... ...
 ```
 
-Masterのcredentials keyを生成・秘匿情報の編集
+# Masterのcredentials keyを生成・秘匿情報の編集
 ```
 $ EDITOR=vim bin/rails credentials:edit
 ```
 
 
-環境毎のcredentials keyを生成・秘匿情報の編集
-# テスト環境
+# 環境毎のcredentials keyを生成・秘匿情報の編集
+## テスト環境
 ```
 $ EDITOR="vim" bin/rails credentials:edit -e test
 ```
 
-# 開発環境
+## 開発環境
 ```
 $ EDITOR="vim" bin/rails credentials:edit -e development
 ```
 
-# ステージング環境
+## ステージング環境
 ```
 $ EDITOR="vim" bin/rails credentials:edit -e staging
 ```
 
-# 本番環境
+## 本番環境
 ```
 $ EDITOR="vim" bin/rails credentials:edit -e production
 ```
 開発環境なら、-e developmentという感じでオプションで環境を指定します。ちなみに、--environment=developmentという指定も同じです。
 
 環境毎のcredentialsを確認
-# テスト環境
+## テスト環境
 ```
 $ bin/rails credentials:show -e test
 ```
 
-# 開発環境
+## 開発環境
 ```
 $ bin/rails credentials:show -e development
 ```
 
-# ステージング環境
+## ステージング環境
 ```
 $ bin/rails credentials:show -e staging
 ```
 
-# 本番環境
+## 本番環境
 ```
 $ bin/rails credentials:show -e production
 ```
