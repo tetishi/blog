@@ -42,7 +42,6 @@ $ tree .
 $ EDITOR=vim bin/rails credentials:edit
 ```
 
-
 # 環境毎のcredentials keyを生成・秘匿情報の編集
 ## テスト環境
 ```
